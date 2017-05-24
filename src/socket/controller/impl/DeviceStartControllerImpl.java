@@ -6,6 +6,7 @@ import socket.exception.fatal.SocketInvalidSourceException;
 import socket.exception.fatal.SocketProtocolUnsupportedException;
 import socket.exception.normal.SocketStartedException;
 import socket.exception.normal.SocketUnregisterException;
+import socket.mysql.DeviceInfo;
 import socket.protocol.SocketMsg;
 import socket.protocol.msg.SocketResponse;
 import socket.routing.item.SocketRoutingFormalItem;
@@ -45,6 +46,7 @@ public enum  DeviceStartControllerImpl implements SocketController {
 
 
         ((SocketRoutingFormalItem)source).addStartDevice();
+//        DeviceInfo.saveDevice()
         final SocketResponse response = request.makeResponse();
         responses.add(response);
         return true;

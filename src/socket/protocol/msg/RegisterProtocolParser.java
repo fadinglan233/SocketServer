@@ -29,7 +29,6 @@ public class RegisterProtocolParser implements SocketProtocolParser {
 
     @Override
     public SocketMsg parse(String data) throws SocketProtocolBrokenException {
-        System.out.println("macAddress is : " + data.substring(7, 19));
         String macAddress = data.substring(7,19);
         return new SocketDefaultMsg(){{
             setFrom(macAddress);
