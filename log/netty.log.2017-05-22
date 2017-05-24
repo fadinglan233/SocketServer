@@ -1,0 +1,267 @@
+[DEBUG] [2017-05-22 16:38:01,636] [main] [io.netty.util.internal.logging.InternalLoggerFactory] Using Log4J as the default logging framework
+[DEBUG] [2017-05-22 16:38:01,639] [main] [io.netty.channel.MultithreadEventLoopGroup] -Dio.netty.eventLoopThreads: 8
+[DEBUG] [2017-05-22 16:38:01,666] [main] [io.netty.util.internal.PlatformDependent] -Dio.netty.noUnsafe: false
+[DEBUG] [2017-05-22 16:38:01,668] [main] [io.netty.util.internal.PlatformDependent0] sun.misc.Unsafe.theUnsafe: available
+[DEBUG] [2017-05-22 16:38:01,672] [main] [io.netty.util.internal.PlatformDependent0] sun.misc.Unsafe.copyMemory: available
+[DEBUG] [2017-05-22 16:38:01,673] [main] [io.netty.util.internal.PlatformDependent0] java.nio.Buffer.address: available
+[DEBUG] [2017-05-22 16:38:01,674] [main] [io.netty.util.internal.PlatformDependent0] direct buffer constructor: available
+[DEBUG] [2017-05-22 16:38:01,674] [main] [io.netty.util.internal.PlatformDependent0] java.nio.Bits.unaligned: available, true
+[DEBUG] [2017-05-22 16:38:01,674] [main] [io.netty.util.internal.PlatformDependent0] java.nio.DirectByteBuffer.<init>(long, int): available
+[DEBUG] [2017-05-22 16:38:01,675] [main] [io.netty.util.internal.Cleaner0] java.nio.ByteBuffer.cleaner(): available
+[DEBUG] [2017-05-22 16:38:01,675] [main] [io.netty.util.internal.PlatformDependent] Platform: Windows
+[DEBUG] [2017-05-22 16:38:01,676] [main] [io.netty.util.internal.PlatformDependent] Java version: 8
+[DEBUG] [2017-05-22 16:38:01,676] [main] [io.netty.util.internal.PlatformDependent] sun.misc.Unsafe: available
+[DEBUG] [2017-05-22 16:38:01,676] [main] [io.netty.util.internal.PlatformDependent] -Dio.netty.tmpdir: C:\Users\FADING~1\AppData\Local\Temp (java.io.tmpdir)
+[DEBUG] [2017-05-22 16:38:01,676] [main] [io.netty.util.internal.PlatformDependent] -Dio.netty.bitMode: 64 (sun.arch.data.model)
+[DEBUG] [2017-05-22 16:38:01,677] [main] [io.netty.util.internal.PlatformDependent] -Dio.netty.noPreferDirect: false
+[DEBUG] [2017-05-22 16:38:01,677] [main] [io.netty.util.internal.PlatformDependent] io.netty.maxDirectMemory: 1881145344 bytes
+[DEBUG] [2017-05-22 16:38:01,696] [main] [io.netty.channel.nio.NioEventLoop] -Dio.netty.noKeySetOptimization: false
+[DEBUG] [2017-05-22 16:38:01,696] [main] [io.netty.channel.nio.NioEventLoop] -Dio.netty.selectorAutoRebuildThreshold: 512
+[DEBUG] [2017-05-22 16:38:01,699] [main] [io.netty.util.internal.PlatformDependent] org.jctools-core.MpscChunkedArrayQueue: available
+[DEBUG] [2017-05-22 16:38:01,853] [main] [io.netty.channel.DefaultChannelId] -Dio.netty.processId: 2360 (auto-detected)
+[DEBUG] [2017-05-22 16:38:01,855] [main] [io.netty.util.NetUtil] -Djava.net.preferIPv4Stack: false
+[DEBUG] [2017-05-22 16:38:01,855] [main] [io.netty.util.NetUtil] -Djava.net.preferIPv6Addresses: false
+[DEBUG] [2017-05-22 16:38:01,868] [main] [io.netty.util.NetUtil] Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+[DEBUG] [2017-05-22 16:38:01,868] [main] [io.netty.util.NetUtil] \proc\sys\net\core\somaxconn: 200 (non-existent)
+[DEBUG] [2017-05-22 16:38:01,918] [main] [io.netty.channel.DefaultChannelId] -Dio.netty.machineId: 00:00:00:00:00:00:00:e0 (auto-detected)
+[DEBUG] [2017-05-22 16:38:01,942] [main] [io.netty.util.ResourceLeakDetector] -Dio.netty.leakDetection.level: simple
+[DEBUG] [2017-05-22 16:38:01,942] [main] [io.netty.util.ResourceLeakDetector] -Dio.netty.leakDetection.maxRecords: 4
+[DEBUG] [2017-05-22 16:38:01,972] [main] [io.netty.buffer.PooledByteBufAllocator] -Dio.netty.allocator.numHeapArenas: 8
+[DEBUG] [2017-05-22 16:38:01,972] [main] [io.netty.buffer.PooledByteBufAllocator] -Dio.netty.allocator.numDirectArenas: 8
+[DEBUG] [2017-05-22 16:38:01,972] [main] [io.netty.buffer.PooledByteBufAllocator] -Dio.netty.allocator.pageSize: 8192
+[DEBUG] [2017-05-22 16:38:01,972] [main] [io.netty.buffer.PooledByteBufAllocator] -Dio.netty.allocator.maxOrder: 11
+[DEBUG] [2017-05-22 16:38:01,972] [main] [io.netty.buffer.PooledByteBufAllocator] -Dio.netty.allocator.chunkSize: 16777216
+[DEBUG] [2017-05-22 16:38:01,972] [main] [io.netty.buffer.PooledByteBufAllocator] -Dio.netty.allocator.tinyCacheSize: 512
+[DEBUG] [2017-05-22 16:38:01,972] [main] [io.netty.buffer.PooledByteBufAllocator] -Dio.netty.allocator.smallCacheSize: 256
+[DEBUG] [2017-05-22 16:38:01,973] [main] [io.netty.buffer.PooledByteBufAllocator] -Dio.netty.allocator.normalCacheSize: 64
+[DEBUG] [2017-05-22 16:38:01,973] [main] [io.netty.buffer.PooledByteBufAllocator] -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+[DEBUG] [2017-05-22 16:38:01,973] [main] [io.netty.buffer.PooledByteBufAllocator] -Dio.netty.allocator.cacheTrimInterval: 8192
+[DEBUG] [2017-05-22 16:38:01,973] [main] [io.netty.buffer.PooledByteBufAllocator] -Dio.netty.allocator.useCacheForAllThreads: true
+[DEBUG] [2017-05-22 16:38:01,984] [main] [io.netty.buffer.ByteBufUtil] -Dio.netty.allocator.type: pooled
+[DEBUG] [2017-05-22 16:38:01,985] [main] [io.netty.buffer.ByteBufUtil] -Dio.netty.threadLocalDirectBufferSize: 65536
+[DEBUG] [2017-05-22 16:38:01,985] [main] [io.netty.buffer.ByteBufUtil] -Dio.netty.maxThreadLocalCharBufferSize: 16384
+[WARN ] [2017-05-22 16:38:01,995] [main] [io.netty.bootstrap.ServerBootstrap] Unknown channel option 'TCP_NODELAY' for channel '[id: 0xf145bad3]'
+[DEBUG] [2017-05-22 16:38:18,284] [nioEventLoopGroup-3-1] [io.netty.buffer.AbstractByteBuf] -Dio.netty.buffer.bytebuf.checkAccessible: true
+[DEBUG] [2017-05-22 16:38:18,285] [nioEventLoopGroup-3-1] [io.netty.util.ResourceLeakDetectorFactory] Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@4947b550
+[DEBUG] [2017-05-22 16:38:21,649] [nioEventLoopGroup-3-1] [io.netty.util.Recycler] -Dio.netty.recycler.maxCapacityPerThread: 32768
+[DEBUG] [2017-05-22 16:38:21,649] [nioEventLoopGroup-3-1] [io.netty.util.Recycler] -Dio.netty.recycler.maxSharedCapacityFactor: 2
+[DEBUG] [2017-05-22 16:38:21,649] [nioEventLoopGroup-3-1] [io.netty.util.Recycler] -Dio.netty.recycler.linkCapacity: 16
+[DEBUG] [2017-05-22 16:38:21,649] [nioEventLoopGroup-3-1] [io.netty.util.Recycler] -Dio.netty.recycler.ratio: 8
+[DEBUG] [2017-05-22 16:38:21,661] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message sssss that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2017-05-22 16:38:27,962] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message sssss that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2017-05-22 16:38:29,628] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message sssss that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2017-05-22 16:42:25,266] [main] [io.netty.util.internal.logging.InternalLoggerFactory] Using Log4J as the default logging framework
+[DEBUG] [2017-05-22 16:42:25,269] [main] [io.netty.channel.MultithreadEventLoopGroup] -Dio.netty.eventLoopThreads: 8
+[DEBUG] [2017-05-22 16:42:25,324] [main] [io.netty.util.internal.PlatformDependent] -Dio.netty.noUnsafe: false
+[DEBUG] [2017-05-22 16:42:25,326] [main] [io.netty.util.internal.PlatformDependent0] sun.misc.Unsafe.theUnsafe: available
+[DEBUG] [2017-05-22 16:42:25,327] [main] [io.netty.util.internal.PlatformDependent0] sun.misc.Unsafe.copyMemory: available
+[DEBUG] [2017-05-22 16:42:25,328] [main] [io.netty.util.internal.PlatformDependent0] java.nio.Buffer.address: available
+[DEBUG] [2017-05-22 16:42:25,328] [main] [io.netty.util.internal.PlatformDependent0] direct buffer constructor: available
+[DEBUG] [2017-05-22 16:42:25,329] [main] [io.netty.util.internal.PlatformDependent0] java.nio.Bits.unaligned: available, true
+[DEBUG] [2017-05-22 16:42:25,329] [main] [io.netty.util.internal.PlatformDependent0] java.nio.DirectByteBuffer.<init>(long, int): available
+[DEBUG] [2017-05-22 16:42:25,329] [main] [io.netty.util.internal.Cleaner0] java.nio.ByteBuffer.cleaner(): available
+[DEBUG] [2017-05-22 16:42:25,330] [main] [io.netty.util.internal.PlatformDependent] Platform: Windows
+[DEBUG] [2017-05-22 16:42:25,330] [main] [io.netty.util.internal.PlatformDependent] Java version: 8
+[DEBUG] [2017-05-22 16:42:25,330] [main] [io.netty.util.internal.PlatformDependent] sun.misc.Unsafe: available
+[DEBUG] [2017-05-22 16:42:25,331] [main] [io.netty.util.internal.PlatformDependent] -Dio.netty.tmpdir: C:\Users\FADING~1\AppData\Local\Temp (java.io.tmpdir)
+[DEBUG] [2017-05-22 16:42:25,331] [main] [io.netty.util.internal.PlatformDependent] -Dio.netty.bitMode: 64 (sun.arch.data.model)
+[DEBUG] [2017-05-22 16:42:25,332] [main] [io.netty.util.internal.PlatformDependent] -Dio.netty.noPreferDirect: false
+[DEBUG] [2017-05-22 16:42:25,332] [main] [io.netty.util.internal.PlatformDependent] io.netty.maxDirectMemory: 1881145344 bytes
+[DEBUG] [2017-05-22 16:42:25,355] [main] [io.netty.channel.nio.NioEventLoop] -Dio.netty.noKeySetOptimization: false
+[DEBUG] [2017-05-22 16:42:25,355] [main] [io.netty.channel.nio.NioEventLoop] -Dio.netty.selectorAutoRebuildThreshold: 512
+[DEBUG] [2017-05-22 16:42:25,358] [main] [io.netty.util.internal.PlatformDependent] org.jctools-core.MpscChunkedArrayQueue: available
+[DEBUG] [2017-05-22 16:42:25,499] [main] [io.netty.channel.DefaultChannelId] -Dio.netty.processId: 11828 (auto-detected)
+[DEBUG] [2017-05-22 16:42:25,501] [main] [io.netty.util.NetUtil] -Djava.net.preferIPv4Stack: false
+[DEBUG] [2017-05-22 16:42:25,502] [main] [io.netty.util.NetUtil] -Djava.net.preferIPv6Addresses: false
+[DEBUG] [2017-05-22 16:42:25,517] [main] [io.netty.util.NetUtil] Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+[DEBUG] [2017-05-22 16:42:25,518] [main] [io.netty.util.NetUtil] \proc\sys\net\core\somaxconn: 200 (non-existent)
+[DEBUG] [2017-05-22 16:42:25,545] [main] [io.netty.channel.DefaultChannelId] -Dio.netty.machineId: 00:00:00:00:00:00:00:e0 (auto-detected)
+[DEBUG] [2017-05-22 16:42:25,561] [main] [io.netty.util.ResourceLeakDetector] -Dio.netty.leakDetection.level: simple
+[DEBUG] [2017-05-22 16:42:25,561] [main] [io.netty.util.ResourceLeakDetector] -Dio.netty.leakDetection.maxRecords: 4
+[DEBUG] [2017-05-22 16:42:25,583] [main] [io.netty.buffer.PooledByteBufAllocator] -Dio.netty.allocator.numHeapArenas: 8
+[DEBUG] [2017-05-22 16:42:25,583] [main] [io.netty.buffer.PooledByteBufAllocator] -Dio.netty.allocator.numDirectArenas: 8
+[DEBUG] [2017-05-22 16:42:25,583] [main] [io.netty.buffer.PooledByteBufAllocator] -Dio.netty.allocator.pageSize: 8192
+[DEBUG] [2017-05-22 16:42:25,583] [main] [io.netty.buffer.PooledByteBufAllocator] -Dio.netty.allocator.maxOrder: 11
+[DEBUG] [2017-05-22 16:42:25,583] [main] [io.netty.buffer.PooledByteBufAllocator] -Dio.netty.allocator.chunkSize: 16777216
+[DEBUG] [2017-05-22 16:42:25,583] [main] [io.netty.buffer.PooledByteBufAllocator] -Dio.netty.allocator.tinyCacheSize: 512
+[DEBUG] [2017-05-22 16:42:25,583] [main] [io.netty.buffer.PooledByteBufAllocator] -Dio.netty.allocator.smallCacheSize: 256
+[DEBUG] [2017-05-22 16:42:25,584] [main] [io.netty.buffer.PooledByteBufAllocator] -Dio.netty.allocator.normalCacheSize: 64
+[DEBUG] [2017-05-22 16:42:25,584] [main] [io.netty.buffer.PooledByteBufAllocator] -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+[DEBUG] [2017-05-22 16:42:25,584] [main] [io.netty.buffer.PooledByteBufAllocator] -Dio.netty.allocator.cacheTrimInterval: 8192
+[DEBUG] [2017-05-22 16:42:25,584] [main] [io.netty.buffer.PooledByteBufAllocator] -Dio.netty.allocator.useCacheForAllThreads: true
+[DEBUG] [2017-05-22 16:42:25,598] [main] [io.netty.buffer.ByteBufUtil] -Dio.netty.allocator.type: pooled
+[DEBUG] [2017-05-22 16:42:25,598] [main] [io.netty.buffer.ByteBufUtil] -Dio.netty.threadLocalDirectBufferSize: 65536
+[DEBUG] [2017-05-22 16:42:25,598] [main] [io.netty.buffer.ByteBufUtil] -Dio.netty.maxThreadLocalCharBufferSize: 16384
+[WARN ] [2017-05-22 16:42:25,608] [main] [io.netty.bootstrap.ServerBootstrap] Unknown channel option 'TCP_NODELAY' for channel '[id: 0x7cbb1cd3]'
+[DEBUG] [2017-05-22 16:42:32,518] [nioEventLoopGroup-3-1] [io.netty.buffer.AbstractByteBuf] -Dio.netty.buffer.bytebuf.checkAccessible: true
+[DEBUG] [2017-05-22 16:42:32,520] [nioEventLoopGroup-3-1] [io.netty.util.ResourceLeakDetectorFactory] Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@3bb5d3ec
+[DEBUG] [2017-05-22 16:42:36,910] [nioEventLoopGroup-3-1] [io.netty.util.Recycler] -Dio.netty.recycler.maxCapacityPerThread: 32768
+[DEBUG] [2017-05-22 16:42:36,910] [nioEventLoopGroup-3-1] [io.netty.util.Recycler] -Dio.netty.recycler.maxSharedCapacityFactor: 2
+[DEBUG] [2017-05-22 16:42:36,910] [nioEventLoopGroup-3-1] [io.netty.util.Recycler] -Dio.netty.recycler.linkCapacity: 16
+[DEBUG] [2017-05-22 16:42:36,910] [nioEventLoopGroup-3-1] [io.netty.util.Recycler] -Dio.netty.recycler.ratio: 8
+[DEBUG] [2017-05-22 16:42:36,919] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message sssss that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2017-05-22 16:43:56,363] [main] [io.netty.util.internal.logging.InternalLoggerFactory] Using Log4J as the default logging framework
+[DEBUG] [2017-05-22 16:43:56,367] [main] [io.netty.channel.MultithreadEventLoopGroup] -Dio.netty.eventLoopThreads: 8
+[DEBUG] [2017-05-22 16:43:56,400] [main] [io.netty.channel.nio.NioEventLoop] -Dio.netty.noKeySetOptimization: false
+[DEBUG] [2017-05-22 16:43:56,400] [main] [io.netty.channel.nio.NioEventLoop] -Dio.netty.selectorAutoRebuildThreshold: 512
+[DEBUG] [2017-05-22 16:43:56,594] [main] [io.netty.channel.DefaultChannelId] -Dio.netty.machineId: e0:3f:49:11:ae:6b:00:00 (auto-detected)
+[DEBUG] [2017-05-22 16:43:56,600] [main] [io.netty.channel.DefaultChannelId] -Dio.netty.processId: 12036 (auto-detected)
+[DEBUG] [2017-05-22 16:43:56,605] [main] [io.netty.util.internal.ThreadLocalRandom] -Dio.netty.initialSeedUniquifier: 0xefa1ab6b64515722
+[DEBUG] [2017-05-22 16:43:56,612] [main] [io.netty.channel.ChannelOutboundBuffer] -Dio.netty.threadLocalDirectBufferSize: 65536
+[DEBUG] [2017-05-22 16:43:56,635] [main] [io.netty.util.internal.PlatformDependent] Platform: Windows
+[DEBUG] [2017-05-22 16:43:56,635] [main] [io.netty.util.internal.PlatformDependent] Java version: 8
+[DEBUG] [2017-05-22 16:43:56,635] [main] [io.netty.util.internal.PlatformDependent] -Dio.netty.noUnsafe: false
+[DEBUG] [2017-05-22 16:43:56,636] [main] [io.netty.util.internal.PlatformDependent0] java.nio.ByteBuffer.cleaner: available
+[DEBUG] [2017-05-22 16:43:56,637] [main] [io.netty.util.internal.PlatformDependent0] java.nio.Buffer.address: available
+[DEBUG] [2017-05-22 16:43:56,637] [main] [io.netty.util.internal.PlatformDependent0] sun.misc.Unsafe.theUnsafe: available
+[DEBUG] [2017-05-22 16:43:56,637] [main] [io.netty.util.internal.PlatformDependent0] sun.misc.Unsafe.copyMemory: available
+[DEBUG] [2017-05-22 16:43:56,637] [main] [io.netty.util.internal.PlatformDependent0] java.nio.Bits.unaligned: true
+[DEBUG] [2017-05-22 16:43:56,637] [main] [io.netty.util.internal.PlatformDependent] sun.misc.Unsafe: available
+[DEBUG] [2017-05-22 16:43:56,637] [main] [io.netty.util.internal.PlatformDependent] -Dio.netty.noJavassist: false
+[DEBUG] [2017-05-22 16:43:56,638] [main] [io.netty.util.internal.PlatformDependent] Javassist: unavailable
+[DEBUG] [2017-05-22 16:43:56,638] [main] [io.netty.util.internal.PlatformDependent] You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+[DEBUG] [2017-05-22 16:43:56,638] [main] [io.netty.util.internal.PlatformDependent] -Dio.netty.noPreferDirect: false
+[DEBUG] [2017-05-22 16:43:56,657] [main] [io.netty.util.NetUtil] Loopback interface: Software Loopback Interface 1
+[DEBUG] [2017-05-22 16:43:56,657] [main] [io.netty.util.NetUtil] Loopback address: /127.0.0.1 (primary)
+[DEBUG] [2017-05-22 16:43:56,657] [main] [io.netty.util.NetUtil] Loopback address: /0:0:0:0:0:0:0:1
+[DEBUG] [2017-05-22 16:44:00,958] [nioEventLoopGroup-3-1] [io.netty.util.ResourceLeakDetector] -Dio.netty.leakDetectionLevel: simple
+[DEBUG] [2017-05-22 16:44:02,806] [nioEventLoopGroup-3-1] [tcp.netty.ServerHandler] Server receive message from: [/192.168.1.116:50814] message is : sssss
+
+[ERROR] [2017-05-22 16:44:02,826] [nioEventLoopGroup-3-1] [tcp.netty.ServerHandler] /192.168.1.116:50814has closed!
+[ERROR] [2017-05-22 16:44:02,826] [nioEventLoopGroup-3-1] [tcp.netty.ServerHandler] /192.168.1.116:50814has disconnected
+[DEBUG] [2017-05-22 16:53:39,031] [main] [io.netty.util.internal.logging.InternalLoggerFactory] Using Log4J as the default logging framework
+[DEBUG] [2017-05-22 16:53:39,036] [main] [io.netty.channel.MultithreadEventLoopGroup] -Dio.netty.eventLoopThreads: 8
+[DEBUG] [2017-05-22 16:53:39,084] [main] [io.netty.channel.nio.NioEventLoop] -Dio.netty.noKeySetOptimization: false
+[DEBUG] [2017-05-22 16:53:39,084] [main] [io.netty.channel.nio.NioEventLoop] -Dio.netty.selectorAutoRebuildThreshold: 512
+[DEBUG] [2017-05-22 16:53:39,297] [main] [io.netty.channel.DefaultChannelId] -Dio.netty.machineId: e0:3f:49:11:ae:6b:00:00 (auto-detected)
+[DEBUG] [2017-05-22 16:53:39,304] [main] [io.netty.channel.DefaultChannelId] -Dio.netty.processId: 11896 (auto-detected)
+[DEBUG] [2017-05-22 16:53:39,309] [main] [io.netty.util.internal.ThreadLocalRandom] -Dio.netty.initialSeedUniquifier: 0x3e297782bed9f9fb
+[DEBUG] [2017-05-22 16:53:39,315] [main] [io.netty.channel.ChannelOutboundBuffer] -Dio.netty.threadLocalDirectBufferSize: 65536
+[DEBUG] [2017-05-22 16:53:39,337] [main] [io.netty.util.internal.PlatformDependent] Platform: Windows
+[DEBUG] [2017-05-22 16:53:39,338] [main] [io.netty.util.internal.PlatformDependent] Java version: 8
+[DEBUG] [2017-05-22 16:53:39,338] [main] [io.netty.util.internal.PlatformDependent] -Dio.netty.noUnsafe: false
+[DEBUG] [2017-05-22 16:53:39,339] [main] [io.netty.util.internal.PlatformDependent0] java.nio.ByteBuffer.cleaner: available
+[DEBUG] [2017-05-22 16:53:39,339] [main] [io.netty.util.internal.PlatformDependent0] java.nio.Buffer.address: available
+[DEBUG] [2017-05-22 16:53:39,339] [main] [io.netty.util.internal.PlatformDependent0] sun.misc.Unsafe.theUnsafe: available
+[DEBUG] [2017-05-22 16:53:39,340] [main] [io.netty.util.internal.PlatformDependent0] sun.misc.Unsafe.copyMemory: available
+[DEBUG] [2017-05-22 16:53:39,340] [main] [io.netty.util.internal.PlatformDependent0] java.nio.Bits.unaligned: true
+[DEBUG] [2017-05-22 16:53:39,340] [main] [io.netty.util.internal.PlatformDependent] sun.misc.Unsafe: available
+[DEBUG] [2017-05-22 16:53:39,340] [main] [io.netty.util.internal.PlatformDependent] -Dio.netty.noJavassist: false
+[DEBUG] [2017-05-22 16:53:39,341] [main] [io.netty.util.internal.PlatformDependent] Javassist: unavailable
+[DEBUG] [2017-05-22 16:53:39,341] [main] [io.netty.util.internal.PlatformDependent] You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+[DEBUG] [2017-05-22 16:53:39,341] [main] [io.netty.util.internal.PlatformDependent] -Dio.netty.noPreferDirect: false
+[DEBUG] [2017-05-22 16:53:39,356] [main] [io.netty.util.NetUtil] Loopback interface: Software Loopback Interface 1
+[DEBUG] [2017-05-22 16:53:39,356] [main] [io.netty.util.NetUtil] Loopback address: /127.0.0.1 (primary)
+[DEBUG] [2017-05-22 16:53:39,356] [main] [io.netty.util.NetUtil] Loopback address: /0:0:0:0:0:0:0:1
+[DEBUG] [2017-05-22 16:53:52,232] [nioEventLoopGroup-3-1] [io.netty.util.ResourceLeakDetector] -Dio.netty.leakDetectionLevel: simple
+[DEBUG] [2017-05-22 16:54:12,281] [nioEventLoopGroup-3-1] [tcp.netty.ServerHandler] Server receive message from: [/192.168.1.116:51191] message is : IHT****d8b04cb579462.0
+
+[DEBUG] [2017-05-22 16:54:12,314] [nioEventLoopGroup-3-1] [tcp.task.ServerTask] msgType is :REGISTER
+[DEBUG] [2017-05-22 16:54:17,194] [nioEventLoopGroup-3-1] [tcp.handler.impl.RegisterListener] HardwareAddress : [d8b04cb57946] register successful! time is :2017-05-18 10:59:09
+[DEBUG] [2017-05-22 16:54:17,260] [nioEventLoopGroup-3-1] [tcp.util.common] reply message is [{"flag":1,"msgType":1,"msgID":0,"from":"server","state":1,"to":"d8b04cb57946"}
+]
+[DEBUG] [2017-05-22 16:54:17,262] [nioEventLoopGroup-3-1] [tcp.netty.ServerHandler] Server receive message from: [/192.168.1.116:51191] message is : IHT****d8b04cb462.0
+
+[ERROR] [2017-05-22 16:54:17,262] [nioEventLoopGroup-3-1] [tcp.exception.fatal.SocketFatalException] there are no adapt protocol type for this message
+[ERROR] [2017-05-22 16:54:17,263] [nioEventLoopGroup-3-1] [tcp.netty.ServerHandler] /192.168.1.116:51191has closed!
+[ERROR] [2017-05-22 16:54:17,264] [nioEventLoopGroup-3-1] [tcp.netty.ServerHandler] /192.168.1.116:51191has disconnected
+[DEBUG] [2017-05-22 16:55:18,558] [main] [io.netty.util.internal.logging.InternalLoggerFactory] Using Log4J as the default logging framework
+[DEBUG] [2017-05-22 16:55:18,563] [main] [io.netty.channel.MultithreadEventLoopGroup] -Dio.netty.eventLoopThreads: 8
+[DEBUG] [2017-05-22 16:55:18,606] [main] [io.netty.channel.nio.NioEventLoop] -Dio.netty.noKeySetOptimization: false
+[DEBUG] [2017-05-22 16:55:18,606] [main] [io.netty.channel.nio.NioEventLoop] -Dio.netty.selectorAutoRebuildThreshold: 512
+[DEBUG] [2017-05-22 16:55:18,825] [main] [io.netty.channel.DefaultChannelId] -Dio.netty.machineId: e0:3f:49:11:ae:6b:00:00 (auto-detected)
+[DEBUG] [2017-05-22 16:55:18,835] [main] [io.netty.channel.DefaultChannelId] -Dio.netty.processId: 4344 (auto-detected)
+[DEBUG] [2017-05-22 16:55:18,841] [main] [io.netty.util.internal.ThreadLocalRandom] -Dio.netty.initialSeedUniquifier: 0x865c167aa0ea9aa7
+[DEBUG] [2017-05-22 16:55:18,848] [main] [io.netty.channel.ChannelOutboundBuffer] -Dio.netty.threadLocalDirectBufferSize: 65536
+[DEBUG] [2017-05-22 16:55:18,876] [main] [io.netty.util.internal.PlatformDependent] Platform: Windows
+[DEBUG] [2017-05-22 16:55:18,877] [main] [io.netty.util.internal.PlatformDependent] Java version: 8
+[DEBUG] [2017-05-22 16:55:18,877] [main] [io.netty.util.internal.PlatformDependent] -Dio.netty.noUnsafe: false
+[DEBUG] [2017-05-22 16:55:18,878] [main] [io.netty.util.internal.PlatformDependent0] java.nio.ByteBuffer.cleaner: available
+[DEBUG] [2017-05-22 16:55:18,878] [main] [io.netty.util.internal.PlatformDependent0] java.nio.Buffer.address: available
+[DEBUG] [2017-05-22 16:55:18,878] [main] [io.netty.util.internal.PlatformDependent0] sun.misc.Unsafe.theUnsafe: available
+[DEBUG] [2017-05-22 16:55:18,879] [main] [io.netty.util.internal.PlatformDependent0] sun.misc.Unsafe.copyMemory: available
+[DEBUG] [2017-05-22 16:55:18,879] [main] [io.netty.util.internal.PlatformDependent0] java.nio.Bits.unaligned: true
+[DEBUG] [2017-05-22 16:55:18,879] [main] [io.netty.util.internal.PlatformDependent] sun.misc.Unsafe: available
+[DEBUG] [2017-05-22 16:55:18,879] [main] [io.netty.util.internal.PlatformDependent] -Dio.netty.noJavassist: false
+[DEBUG] [2017-05-22 16:55:18,880] [main] [io.netty.util.internal.PlatformDependent] Javassist: unavailable
+[DEBUG] [2017-05-22 16:55:18,880] [main] [io.netty.util.internal.PlatformDependent] You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+[DEBUG] [2017-05-22 16:55:18,880] [main] [io.netty.util.internal.PlatformDependent] -Dio.netty.noPreferDirect: false
+[DEBUG] [2017-05-22 16:55:18,894] [main] [io.netty.util.NetUtil] Loopback interface: Software Loopback Interface 1
+[DEBUG] [2017-05-22 16:55:18,894] [main] [io.netty.util.NetUtil] Loopback address: /127.0.0.1 (primary)
+[DEBUG] [2017-05-22 16:55:18,895] [main] [io.netty.util.NetUtil] Loopback address: /0:0:0:0:0:0:0:1
+[DEBUG] [2017-05-22 16:55:20,599] [nioEventLoopGroup-3-1] [io.netty.util.ResourceLeakDetector] -Dio.netty.leakDetectionLevel: simple
+[DEBUG] [2017-05-22 16:55:22,454] [nioEventLoopGroup-3-1] [tcp.netty.ServerHandler] Server receive message from: [/192.168.1.116:51275] message is : IHT****d8b04cb462.0
+
+[ERROR] [2017-05-22 16:55:22,472] [nioEventLoopGroup-3-1] [tcp.exception.fatal.SocketFatalException] there are no adapt protocol type for this message
+[ERROR] [2017-05-22 16:55:22,474] [nioEventLoopGroup-3-1] [tcp.netty.ServerHandler] /192.168.1.116:51275has closed!
+[ERROR] [2017-05-22 16:55:22,474] [nioEventLoopGroup-3-1] [tcp.netty.ServerHandler] /192.168.1.116:51275has disconnected
+[DEBUG] [2017-05-22 16:57:10,635] [main] [io.netty.util.internal.logging.InternalLoggerFactory] Using Log4J as the default logging framework
+[DEBUG] [2017-05-22 16:57:10,638] [main] [io.netty.channel.MultithreadEventLoopGroup] -Dio.netty.eventLoopThreads: 8
+[DEBUG] [2017-05-22 16:57:10,673] [main] [io.netty.channel.nio.NioEventLoop] -Dio.netty.noKeySetOptimization: false
+[DEBUG] [2017-05-22 16:57:10,674] [main] [io.netty.channel.nio.NioEventLoop] -Dio.netty.selectorAutoRebuildThreshold: 512
+[DEBUG] [2017-05-22 16:57:10,873] [main] [io.netty.channel.DefaultChannelId] -Dio.netty.machineId: e0:3f:49:11:ae:6b:00:00 (auto-detected)
+[DEBUG] [2017-05-22 16:57:10,881] [main] [io.netty.channel.DefaultChannelId] -Dio.netty.processId: 9796 (auto-detected)
+[DEBUG] [2017-05-22 16:57:10,892] [main] [io.netty.util.internal.ThreadLocalRandom] -Dio.netty.initialSeedUniquifier: 0x69c13b3048197409
+[DEBUG] [2017-05-22 16:57:10,898] [main] [io.netty.channel.ChannelOutboundBuffer] -Dio.netty.threadLocalDirectBufferSize: 65536
+[DEBUG] [2017-05-22 16:57:10,929] [main] [io.netty.util.internal.PlatformDependent] Platform: Windows
+[DEBUG] [2017-05-22 16:57:10,929] [main] [io.netty.util.internal.PlatformDependent] Java version: 8
+[DEBUG] [2017-05-22 16:57:10,929] [main] [io.netty.util.internal.PlatformDependent] -Dio.netty.noUnsafe: false
+[DEBUG] [2017-05-22 16:57:10,930] [main] [io.netty.util.internal.PlatformDependent0] java.nio.ByteBuffer.cleaner: available
+[DEBUG] [2017-05-22 16:57:10,930] [main] [io.netty.util.internal.PlatformDependent0] java.nio.Buffer.address: available
+[DEBUG] [2017-05-22 16:57:10,930] [main] [io.netty.util.internal.PlatformDependent0] sun.misc.Unsafe.theUnsafe: available
+[DEBUG] [2017-05-22 16:57:10,931] [main] [io.netty.util.internal.PlatformDependent0] sun.misc.Unsafe.copyMemory: available
+[DEBUG] [2017-05-22 16:57:10,931] [main] [io.netty.util.internal.PlatformDependent0] java.nio.Bits.unaligned: true
+[DEBUG] [2017-05-22 16:57:10,931] [main] [io.netty.util.internal.PlatformDependent] sun.misc.Unsafe: available
+[DEBUG] [2017-05-22 16:57:10,931] [main] [io.netty.util.internal.PlatformDependent] -Dio.netty.noJavassist: false
+[DEBUG] [2017-05-22 16:57:10,932] [main] [io.netty.util.internal.PlatformDependent] Javassist: unavailable
+[DEBUG] [2017-05-22 16:57:10,932] [main] [io.netty.util.internal.PlatformDependent] You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+[DEBUG] [2017-05-22 16:57:10,932] [main] [io.netty.util.internal.PlatformDependent] -Dio.netty.noPreferDirect: false
+[DEBUG] [2017-05-22 16:57:10,950] [main] [io.netty.util.NetUtil] Loopback interface: Software Loopback Interface 1
+[DEBUG] [2017-05-22 16:57:10,950] [main] [io.netty.util.NetUtil] Loopback address: /127.0.0.1 (primary)
+[DEBUG] [2017-05-22 16:57:10,950] [main] [io.netty.util.NetUtil] Loopback address: /0:0:0:0:0:0:0:1
+[DEBUG] [2017-05-22 16:57:13,252] [nioEventLoopGroup-3-1] [io.netty.util.ResourceLeakDetector] -Dio.netty.leakDetectionLevel: simple
+[DEBUG] [2017-05-22 16:57:14,011] [nioEventLoopGroup-3-1] [tcp.netty.ServerHandler] Server receive message from: [/192.168.1.116:51374] message is : IHT****d8b04cb462.0
+
+[ERROR] [2017-05-22 16:57:14,029] [nioEventLoopGroup-3-1] [tcp.exception.fatal.SocketFatalException] there are no adapt protocol type for this message
+[ERROR] [2017-05-22 16:57:14,031] [nioEventLoopGroup-3-1] [tcp.netty.ServerHandler] /192.168.1.116:51374has closed!
+[ERROR] [2017-05-22 16:57:14,031] [nioEventLoopGroup-3-1] [tcp.netty.ServerHandler] /192.168.1.116:51374has disconnected
+[DEBUG] [2017-05-22 17:01:07,784] [main] [io.netty.util.internal.logging.InternalLoggerFactory] Using Log4J as the default logging framework
+[DEBUG] [2017-05-22 17:01:07,787] [main] [io.netty.channel.MultithreadEventLoopGroup] -Dio.netty.eventLoopThreads: 8
+[DEBUG] [2017-05-22 17:01:07,803] [main] [io.netty.channel.nio.NioEventLoop] -Dio.netty.noKeySetOptimization: false
+[DEBUG] [2017-05-22 17:01:07,803] [main] [io.netty.channel.nio.NioEventLoop] -Dio.netty.selectorAutoRebuildThreshold: 512
+[DEBUG] [2017-05-22 17:01:07,993] [main] [io.netty.channel.DefaultChannelId] -Dio.netty.machineId: e0:3f:49:11:ae:6b:00:00 (auto-detected)
+[DEBUG] [2017-05-22 17:01:07,999] [main] [io.netty.channel.DefaultChannelId] -Dio.netty.processId: 12272 (auto-detected)
+[DEBUG] [2017-05-22 17:01:08,014] [main] [io.netty.util.internal.ThreadLocalRandom] -Dio.netty.initialSeedUniquifier: 0x24ac43632164e3b7
+[DEBUG] [2017-05-22 17:01:08,021] [main] [io.netty.channel.ChannelOutboundBuffer] -Dio.netty.threadLocalDirectBufferSize: 65536
+[DEBUG] [2017-05-22 17:01:08,055] [main] [io.netty.util.internal.PlatformDependent] Platform: Windows
+[DEBUG] [2017-05-22 17:01:08,055] [main] [io.netty.util.internal.PlatformDependent] Java version: 8
+[DEBUG] [2017-05-22 17:01:08,055] [main] [io.netty.util.internal.PlatformDependent] -Dio.netty.noUnsafe: false
+[DEBUG] [2017-05-22 17:01:08,056] [main] [io.netty.util.internal.PlatformDependent0] java.nio.ByteBuffer.cleaner: available
+[DEBUG] [2017-05-22 17:01:08,057] [main] [io.netty.util.internal.PlatformDependent0] java.nio.Buffer.address: available
+[DEBUG] [2017-05-22 17:01:08,057] [main] [io.netty.util.internal.PlatformDependent0] sun.misc.Unsafe.theUnsafe: available
+[DEBUG] [2017-05-22 17:01:08,057] [main] [io.netty.util.internal.PlatformDependent0] sun.misc.Unsafe.copyMemory: available
+[DEBUG] [2017-05-22 17:01:08,057] [main] [io.netty.util.internal.PlatformDependent0] java.nio.Bits.unaligned: true
+[DEBUG] [2017-05-22 17:01:08,057] [main] [io.netty.util.internal.PlatformDependent] sun.misc.Unsafe: available
+[DEBUG] [2017-05-22 17:01:08,058] [main] [io.netty.util.internal.PlatformDependent] -Dio.netty.noJavassist: false
+[DEBUG] [2017-05-22 17:01:08,058] [main] [io.netty.util.internal.PlatformDependent] Javassist: unavailable
+[DEBUG] [2017-05-22 17:01:08,058] [main] [io.netty.util.internal.PlatformDependent] You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+[DEBUG] [2017-05-22 17:01:08,058] [main] [io.netty.util.internal.PlatformDependent] -Dio.netty.noPreferDirect: false
+[DEBUG] [2017-05-22 17:01:08,073] [main] [io.netty.util.NetUtil] Loopback interface: Software Loopback Interface 1
+[DEBUG] [2017-05-22 17:01:08,074] [main] [io.netty.util.NetUtil] Loopback address: /127.0.0.1 (primary)
+[DEBUG] [2017-05-22 17:01:08,074] [main] [io.netty.util.NetUtil] Loopback address: /0:0:0:0:0:0:0:1
+[DEBUG] [2017-05-22 17:01:11,068] [nioEventLoopGroup-3-1] [io.netty.util.ResourceLeakDetector] -Dio.netty.leakDetectionLevel: simple
+[DEBUG] [2017-05-22 17:01:12,159] [nioEventLoopGroup-3-1] [tcp.netty.ServerHandler] Server receive message from: [/192.168.1.116:51554] message is : IHT****d8b04cb462.0
+
+[ERROR] [2017-05-22 17:01:12,178] [nioEventLoopGroup-3-1] [tcp.exception.fatal.SocketFatalException] there are no adapt protocol type for this message
+[ERROR] [2017-05-22 17:01:12,180] [nioEventLoopGroup-3-1] [tcp.netty.ServerHandler] /192.168.1.116:51554has closed!
+[ERROR] [2017-05-22 17:01:12,180] [nioEventLoopGroup-3-1] [tcp.netty.ServerHandler] /192.168.1.116:51554has disconnected
+[DEBUG] [2017-05-22 22:27:44,957] [nioEventLoopGroup-3-2] [tcp.netty.ServerHandler] Server receive message from: [/192.168.1.116:61024] message is : IHT****d8b04cb462.0
+
+[ERROR] [2017-05-22 22:27:44,960] [nioEventLoopGroup-3-2] [tcp.exception.fatal.SocketFatalException] there are no adapt protocol type for this message
+[ERROR] [2017-05-22 22:27:44,962] [nioEventLoopGroup-3-2] [tcp.netty.ServerHandler] /192.168.1.116:61024has closed!
+[ERROR] [2017-05-22 22:27:44,962] [nioEventLoopGroup-3-2] [tcp.netty.ServerHandler] /192.168.1.116:61024has disconnected
+[DEBUG] [2017-05-22 22:27:48,948] [nioEventLoopGroup-3-3] [tcp.netty.ServerHandler] Server receive message from: [/192.168.1.116:61028] message is : IHT****d8b04cb462.0
+
+[ERROR] [2017-05-22 22:27:48,948] [nioEventLoopGroup-3-3] [tcp.exception.fatal.SocketFatalException] there are no adapt protocol type for this message
+[ERROR] [2017-05-22 22:27:48,949] [nioEventLoopGroup-3-3] [tcp.netty.ServerHandler] /192.168.1.116:61028has closed!
+[ERROR] [2017-05-22 22:27:48,949] [nioEventLoopGroup-3-3] [tcp.netty.ServerHandler] /192.168.1.116:61028has disconnected

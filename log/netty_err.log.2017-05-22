@@ -1,0 +1,20 @@
+[ERROR] [2017-05-22 16:44:02,826] [nioEventLoopGroup-3-1] [tcp.netty.ServerHandler] /192.168.1.116:50814has closed!
+[ERROR] [2017-05-22 16:44:02,826] [nioEventLoopGroup-3-1] [tcp.netty.ServerHandler] /192.168.1.116:50814has disconnected
+[ERROR] [2017-05-22 16:54:17,262] [nioEventLoopGroup-3-1] [tcp.exception.fatal.SocketFatalException] there are no adapt protocol type for this message
+[ERROR] [2017-05-22 16:54:17,263] [nioEventLoopGroup-3-1] [tcp.netty.ServerHandler] /192.168.1.116:51191has closed!
+[ERROR] [2017-05-22 16:54:17,264] [nioEventLoopGroup-3-1] [tcp.netty.ServerHandler] /192.168.1.116:51191has disconnected
+[ERROR] [2017-05-22 16:55:22,472] [nioEventLoopGroup-3-1] [tcp.exception.fatal.SocketFatalException] there are no adapt protocol type for this message
+[ERROR] [2017-05-22 16:55:22,474] [nioEventLoopGroup-3-1] [tcp.netty.ServerHandler] /192.168.1.116:51275has closed!
+[ERROR] [2017-05-22 16:55:22,474] [nioEventLoopGroup-3-1] [tcp.netty.ServerHandler] /192.168.1.116:51275has disconnected
+[ERROR] [2017-05-22 16:57:14,029] [nioEventLoopGroup-3-1] [tcp.exception.fatal.SocketFatalException] there are no adapt protocol type for this message
+[ERROR] [2017-05-22 16:57:14,031] [nioEventLoopGroup-3-1] [tcp.netty.ServerHandler] /192.168.1.116:51374has closed!
+[ERROR] [2017-05-22 16:57:14,031] [nioEventLoopGroup-3-1] [tcp.netty.ServerHandler] /192.168.1.116:51374has disconnected
+[ERROR] [2017-05-22 17:01:12,178] [nioEventLoopGroup-3-1] [tcp.exception.fatal.SocketFatalException] there are no adapt protocol type for this message
+[ERROR] [2017-05-22 17:01:12,180] [nioEventLoopGroup-3-1] [tcp.netty.ServerHandler] /192.168.1.116:51554has closed!
+[ERROR] [2017-05-22 17:01:12,180] [nioEventLoopGroup-3-1] [tcp.netty.ServerHandler] /192.168.1.116:51554has disconnected
+[ERROR] [2017-05-22 22:27:44,960] [nioEventLoopGroup-3-2] [tcp.exception.fatal.SocketFatalException] there are no adapt protocol type for this message
+[ERROR] [2017-05-22 22:27:44,962] [nioEventLoopGroup-3-2] [tcp.netty.ServerHandler] /192.168.1.116:61024has closed!
+[ERROR] [2017-05-22 22:27:44,962] [nioEventLoopGroup-3-2] [tcp.netty.ServerHandler] /192.168.1.116:61024has disconnected
+[ERROR] [2017-05-22 22:27:48,948] [nioEventLoopGroup-3-3] [tcp.exception.fatal.SocketFatalException] there are no adapt protocol type for this message
+[ERROR] [2017-05-22 22:27:48,949] [nioEventLoopGroup-3-3] [tcp.netty.ServerHandler] /192.168.1.116:61028has closed!
+[ERROR] [2017-05-22 22:27:48,949] [nioEventLoopGroup-3-3] [tcp.netty.ServerHandler] /192.168.1.116:61028has disconnected
