@@ -5,6 +5,7 @@ import socket.exception.SocketException;
 import socket.exception.fatal.SocketInvalidSourceException;
 import socket.exception.normal.SocketUnregisterException;
 import socket.exception.normal.SocketUnstartedException;
+import socket.mysql.DeviceInfo;
 import socket.protocol.SocketMsg;
 import socket.protocol.msg.SocketResponse;
 import socket.routing.item.SocketRoutingFormalItem;
@@ -41,8 +42,10 @@ public enum  DeviceEndControllerImpl implements SocketController {
 
 
         source.getContext().getRouting().getStartMap().remove(source);
+
         final SocketResponse response = request.makeResponse();
         responses.add(response);
+        DeviceInfo.deleteDevice(request.getFrom());
 
         return true;
     }

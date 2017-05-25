@@ -2,6 +2,7 @@ package socket;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+import socket.MsgProducer.Producer;
 import socket.controller.SocketController;
 import socket.controller.SocketControllersGroup;
 import socket.event.SocketEventListenersGroup;
@@ -57,6 +58,12 @@ public final class SocketServer {
     @Resource
     private SocketEventListenersGroup eventsGroup;
 
+
+    /**
+     * 消息转发中间件
+     */
+    @Resource
+    private Producer producer;
 
     /**
      * 服务器配置
@@ -132,5 +139,13 @@ public final class SocketServer {
 
     public void setConfig(SocketConfig config) {
         this.config = config;
+    }
+
+    public Producer getProducer() {
+        return producer;
+    }
+
+    public void setProducer(Producer producer) {
+        this.producer = producer;
     }
 }

@@ -63,7 +63,6 @@ public class SocketScheduler {
 
         try {
             final SocketMsg msg = context.getProtocolFamily().parse(packet);
-            System.out.print(msg.getFrom());
             msg.setConnectType(connectType);
             msg.setIoTag(ioTag);
 

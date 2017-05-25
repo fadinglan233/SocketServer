@@ -2,7 +2,6 @@ package socket.controller.impl;
 
 import socket.controller.SocketController;
 import socket.exception.SocketException;
-import socket.exception.fatal.SocketInvalidSourceException;
 import socket.exception.normal.SocketUnregisterException;
 import socket.exception.normal.SocketUnstartedException;
 import socket.protocol.SocketMsg;
@@ -39,8 +38,14 @@ public enum  DeviceDataControllerImpl implements SocketController {
             throw new SocketUnstartedException("device [" + request.getFrom() + "] has not start");
 
 
-        final SocketResponse response = request.makeResponse();
-        responses.add(response);
+        if (request.getState() == 0){
+            final SocketResponse response = request.makeResponse();
+            responses.add(response);
+        }
+
+
+        source.getContext().getProducer().sendMessage(request);
+
 
         return true;
     }

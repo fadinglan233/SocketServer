@@ -2,6 +2,7 @@ package socket.mysql;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
+import socket.util.common;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -87,7 +88,7 @@ public class DeviceInfo {
 
             ps = con.prepareStatement(sql);
             ps.setString(1, deviceId);
-//            ps.setString(2, ServerMain.dataMap.get(deviceId));
+            ps.setString(2, common.getCurrentDate());
             ps.executeUpdate();
             con.commit();
             return true;
@@ -150,7 +151,7 @@ public class DeviceInfo {
 
 
 
-    public static boolean deleteDevice(String deviceId, String startTime){
+    public static boolean deleteDevice(String deviceId){
 
         Connection        con      = null;
         PreparedStatement ps        = null;
@@ -158,7 +159,7 @@ public class DeviceInfo {
 
 //        String sql = "DELETE from sleep_data where vc_device_id = '" + deviceId + "' and t_start_time = '"
 //                + ServerMain.dataMap.get(deviceId) + "''";
-        String sql = "DELETE from sleep_data where vc_device_id = '" + deviceId + "' AND t_start_time = '" + startTime + "'";
+        String sql = "DELETE from sleep_data where vc_device_id = '" + deviceId;
 
         try {
             con = DBPool.getConnection();

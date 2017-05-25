@@ -11,6 +11,7 @@ public class main {
 
         final SocketServer server = new SocketServer();
 
+        server.getProducer().initializeProducer("admin", "admin", "tcp://localhost:61616/");
         server.run(
                 new SocketConfig()
                 .setTcpPort(8000)
