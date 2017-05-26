@@ -45,7 +45,8 @@ public enum  DeviceEndControllerImpl implements SocketController {
 
         final SocketResponse response = request.makeResponse();
         responses.add(response);
-        DeviceInfo.deleteDevice(request.getFrom());
+        source.getContext().getProducer().sendMessage(request);
+//        DeviceInfo.deleteDevice(request.getFrom());
 
         return true;
     }

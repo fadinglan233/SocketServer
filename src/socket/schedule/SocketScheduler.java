@@ -6,6 +6,7 @@ import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;
 import io.netty.channel.Channel;
 import org.apache.commons.lang.StringUtils;
+import org.apache.log4j.Logger;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 import socket.SocketServer;
@@ -37,6 +38,7 @@ import java.util.List;
 public class SocketScheduler {
 
     private SocketServer context;
+    private static Logger log = Logger.getLogger(SocketScheduler.class);
 
     @Resource(name = "socket.controllersGroup")
     private SocketHandler handler;
@@ -60,7 +62,7 @@ public class SocketScheduler {
     private SocketIOBooter ioBooter;
 
     public void submit(Channel ctx, String packet, String ioTag, String connectType) throws SocketException{
-
+        log.info("server receive message is : [" + packet + "]");
         try {
             final SocketMsg msg = context.getProtocolFamily().parse(packet);
             msg.setConnectType(connectType);
@@ -75,6 +77,9 @@ public class SocketScheduler {
             final List<SocketResponse> responses = new LinkedList<>();
             if (handler != null)
                 handler.handle(item, msg, responses);
+
+
+
             sendMsg(ctx, responses);
         } catch (SocketNormalException e) {
             if (e.getOriginalMsg() != null) {
@@ -111,6 +116,7 @@ public class SocketScheduler {
         JSONObject json = (JSONObject)JSON.toJSON(msg);
         String data = json.toJSONString() + "\r\n";
 
+        log.info("reply message is : [" + data + "]");
         ByteBuf byteBuf = Unpooled.copiedBuffer((data).getBytes());
         ctx.writeAndFlush(byteBuf);
 //        final SocketRoutingItem target = context.getRouting().getItem(msg.getTo());

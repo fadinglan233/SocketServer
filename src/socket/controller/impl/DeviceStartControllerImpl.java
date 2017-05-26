@@ -46,7 +46,8 @@ public enum  DeviceStartControllerImpl implements SocketController {
 
 
         ((SocketRoutingFormalItem)source).addStartDevice();
-        DeviceInfo.saveDevice(request.getFrom());
+        source.getContext().getProducer().sendMessage(request);
+//        DeviceInfo.saveDevice(request.getFrom());
         final SocketResponse response = request.makeResponse();
         responses.add(response);
         return true;
