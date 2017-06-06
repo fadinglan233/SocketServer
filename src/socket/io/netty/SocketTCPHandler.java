@@ -65,10 +65,10 @@ public class SocketTCPHandler extends ChannelHandlerAdapter {
     @Override
     public void channelInactive(ChannelHandlerContext ctx) throws Exception {
 
-        context.getRouting().unRegister(
-                new SocketDefaultIOTerm() {{
-                    setIoTag(ctx.channel().remoteAddress().toString());
-                }});
+//        context.getRouting().unRegister(
+//                new SocketDefaultIOTerm() {{
+//                    setIoTag(ctx.channel().remoteAddress().toString());
+//                }});
     }
 
     @Override

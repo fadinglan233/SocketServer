@@ -27,6 +27,7 @@ public class SocketDefaultMsg implements SocketMsg {
         response.setTo(getFrom());
         response.setMsgType(getMsgType());
         response.setState(getState());
+        response.setFlag(1);
         return response;
     }
 

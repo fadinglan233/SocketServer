@@ -3,11 +3,14 @@ package socket.MsgProducer;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import org.apache.activemq.ActiveMQConnectionFactory;
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 import socket.protocol.SocketMsg;
 
 import javax.jms.*;
+import java.util.logging.Logger;
 
 /**
  * Created by fadinglan on 2017/5/25.
@@ -24,6 +27,7 @@ public final class Producer {
     private  Destination destination;
     private  MessageProducer producer;
 
+    private static final Log logger = LogFactory.getLog(Producer.class);
 
     public  void initializeProducer(String account, String password, String url){
 
@@ -50,7 +54,7 @@ public final class Producer {
             producer.send(sendMessage);
             session.commit();
         }catch (Exception e){
-            e.printStackTrace();
+            logger.error("send sleep data error, please check");
         }
 
     }

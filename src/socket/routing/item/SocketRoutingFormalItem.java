@@ -5,6 +5,7 @@ import org.springframework.beans.BeanUtils;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 import socket.exception.SocketException;
+import socket.mysql.DeviceInfo;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -39,18 +40,23 @@ public class SocketRoutingFormalItem extends SocketRoutingItem{
         }
     }
 
-    public void addStartDevice() throws SocketException {
+    public void addStartDevice(String macAddress) throws SocketException {
 
-        if (!(isStart(this.getTerm().getIoTag()))){
+        if (!(isStart(this.getTerm().getIoTag(),macAddress))){
             final SocketRoutingStartItem startDevice = new SocketRoutingStartItem();
             BeanUtils.copyProperties(this, startDevice);
             getContext().getRouting().getStartMap().add(startDevice);
         }
     }
 
-    public boolean isStart(String address)throws SocketException{
+    public boolean isStart(String address, String macAddress)throws SocketException{
+        if (getContext().getRouting().getStartMap().contains(address))
+            return true;
 
-        return getContext().getRouting().getStartMap().contains(address);
+        if (DeviceInfo.isStart(macAddress))
+            return true;
+
+        return false;
     }
 
     public void close() throws SocketException {

@@ -39,15 +39,15 @@ public enum  DeviceStartControllerImpl implements SocketController {
                 setOriginalMsg(request);
             }};
 
-        if ((((SocketRoutingFormalItem) source).isStart(source.getTerm().getIoTag())))
+        if ((((SocketRoutingFormalItem) source).isStart(source.getTerm().getIoTag(), request.getFrom())))
             throw new SocketStartedException("device [" + request.getFrom() + "] has started"){{
                 setOriginalMsg(request);
             }};
 
 
-        ((SocketRoutingFormalItem)source).addStartDevice();
+        ((SocketRoutingFormalItem)source).addStartDevice(request.getFrom());
         source.getContext().getProducer().sendMessage(request);
-//        DeviceInfo.saveDevice(request.getFrom());
+        DeviceInfo.saveDevice(request.getFrom());
         final SocketResponse response = request.makeResponse();
         responses.add(response);
         return true;

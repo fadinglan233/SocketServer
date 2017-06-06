@@ -22,7 +22,6 @@ public class DeviceInfo {
         Connection        con      = null;
         PreparedStatement ps        = null;
         ResultSet         rs        = null;
-        String[] result = new String[2];
 
         String sql = "select * from device_info where vc_device_id = '" + deviceId + "'";
 
@@ -45,15 +44,12 @@ public class DeviceInfo {
         return false;
     }
 
-    public static String[] querySleepData(String deviceId){
-
+    public static boolean isStart(String deviceId){
         Connection        con      = null;
         PreparedStatement ps        = null;
         ResultSet         rs        = null;
 
-        String[] sleepData = new String[3];
-
-        String sql = "select * from sleep_data where vc_device_id = '" + deviceId + "'";
+        String sql = "select t_start_time from sleep_data where vc_device_id = '" + deviceId + "'";
 
         try {
             con = DBPool.getConnection();
@@ -63,10 +59,7 @@ public class DeviceInfo {
             rs = ps.executeQuery();
             con.commit();
             if (rs.next()){
-                sleepData[0] = rs.getString("t_start_time");
-                sleepData[1] = rs.getString("mt_heart_rate");
-                sleepData[2] = rs.getString("t_end_time");
-                return sleepData;
+                return true;
             }
 
         }catch (SQLException e){
@@ -74,8 +67,10 @@ public class DeviceInfo {
         }finally {
             DBPool.release(con,ps,rs);
         }
-        return null;
+        return false;
     }
+
+
     public static boolean saveDevice(String deviceId){
 
         Connection        con      = null;
@@ -98,33 +93,12 @@ public class DeviceInfo {
             DBPool.release(con,ps,null);
         }
         return false;
-
     }
 
 
-    public static boolean updateDevice(String deviceId, String sleepData){
 
-        Connection        con      = null;
-        PreparedStatement ps        = null;
-        ResultSet         rs        = null;
 
-        String sql = "update sleep_data set mt_heart_rate ='" + sleepData + "' WHERE vc_device_id = '" + deviceId + "'";
-        try {
-            con = DBPool.getConnection();
-            con.setAutoCommit(false);
 
-            ps = con.prepareStatement(sql);
-            ps.executeUpdate();
-            con.commit();
-            return true;
-        }catch (SQLException e){
-            logger.error("update error" , e);
-        }finally {
-            DBPool.release(con, ps, null);
-        }
-        return false;
-
-    }
 
     public static boolean updateDate(String deviceId , String endTime, String startTime){
 
@@ -159,7 +133,7 @@ public class DeviceInfo {
 
 //        String sql = "DELETE from sleep_data where vc_device_id = '" + deviceId + "' and t_start_time = '"
 //                + ServerMain.dataMap.get(deviceId) + "''";
-        String sql = "DELETE from sleep_data where vc_device_id = '" + deviceId;
+        String sql = "DELETE from sleep_data where vc_device_id = '" + deviceId + "'";
 
         try {
             con = DBPool.getConnection();

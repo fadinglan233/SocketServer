@@ -37,7 +37,7 @@ public enum  DeviceEndControllerImpl implements SocketController {
         if (!(source instanceof SocketRoutingFormalItem))
             throw new SocketUnregisterException("device [" + source.getAddress() + "] has not register");
 
-        if (!(((SocketRoutingFormalItem) source).isStart(source.getTerm().getIoTag())))
+        if (!(((SocketRoutingFormalItem) source).isStart(source.getTerm().getIoTag(), request.getFrom())))
             throw new SocketUnstartedException("device [" + request.getFrom() + "] has not start");
 
 
@@ -45,8 +45,8 @@ public enum  DeviceEndControllerImpl implements SocketController {
 
         final SocketResponse response = request.makeResponse();
         responses.add(response);
-        source.getContext().getProducer().sendMessage(request);
-//        DeviceInfo.deleteDevice(request.getFrom());
+//        source.getContext().getProducer().sendMessage(request);
+        DeviceInfo.deleteDevice(request.getFrom());
 
         return true;
     }

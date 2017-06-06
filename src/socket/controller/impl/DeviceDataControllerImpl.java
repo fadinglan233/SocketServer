@@ -32,17 +32,15 @@ public enum  DeviceDataControllerImpl implements SocketController {
     public boolean work(SocketRoutingItem source, SocketMsg request, List<SocketResponse> responses) throws SocketException {
 
         if (!(source instanceof SocketRoutingFormalItem))
-            throw new SocketUnregisterException("device [" + source.getAddress() + "] has not register");
+            throw new SocketUnregisterException("device [" + request.getFrom() + "] has not register");
 
-        if (!(((SocketRoutingFormalItem) source).isStart(source.getTerm().getIoTag())))
+        if (!(((SocketRoutingFormalItem) source).isStart(source.getTerm().getIoTag(), request.getFrom())))
             throw new SocketUnstartedException("device [" + request.getFrom() + "] has not start");
-
 
         if (request.getState() == 0){
             final SocketResponse response = request.makeResponse();
             responses.add(response);
         }
-
 
         source.getContext().getProducer().sendMessage(request);
 
