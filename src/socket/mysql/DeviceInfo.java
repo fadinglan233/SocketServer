@@ -18,56 +18,12 @@ public class DeviceInfo {
 
 
     public static boolean queryDevice(String deviceId){
+        return selectSQL("select * from device_info where vc_device_id = '" + deviceId + "'");
 
-        Connection        con      = null;
-        PreparedStatement ps        = null;
-        ResultSet         rs        = null;
-
-        String sql = "select * from device_info where vc_device_id = '" + deviceId + "'";
-
-        try {
-            con = DBPool.getConnection();
-            con.setAutoCommit(false);
-
-            ps = con.prepareStatement(sql);
-            rs = ps.executeQuery();
-            con.commit();
-            if (rs.next()){
-                return true;
-            }
-
-        }catch (SQLException e){
-            logger.error("check device sql error" , e);
-        }finally {
-            DBPool.release(con,ps,rs);
-        }
-        return false;
     }
 
     public static boolean isStart(String deviceId){
-        Connection        con      = null;
-        PreparedStatement ps        = null;
-        ResultSet         rs        = null;
-
-        String sql = "select t_start_time from sleep_data where vc_device_id = '" + deviceId + "'";
-
-        try {
-            con = DBPool.getConnection();
-            con.setAutoCommit(false);
-
-            ps = con.prepareStatement(sql);
-            rs = ps.executeQuery();
-            con.commit();
-            if (rs.next()){
-                return true;
-            }
-
-        }catch (SQLException e){
-            logger.error("check device sql error" , e);
-        }finally {
-            DBPool.release(con,ps,rs);
-        }
-        return false;
+        return selectSQL("select t_start_time from sleep_data where vc_device_id = '" + deviceId + "'");
     }
 
 
@@ -99,32 +55,6 @@ public class DeviceInfo {
 
 
 
-
-    public static boolean updateDate(String deviceId , String endTime, String startTime){
-
-        Connection        con      = null;
-        PreparedStatement ps        = null;
-        ResultSet         rs        = null;
-
-        String sql = "update sleep_data set t_end_time ='" + endTime + "' WHERE vc_device_id = '" + deviceId + "' AND t_start_time = '" + startTime + "'";
-        try {
-            con = DBPool.getConnection();
-            con.setAutoCommit(false);
-            ps = con.prepareStatement(sql);
-            ps.executeUpdate();
-            con.commit();
-            return true;
-        }catch (SQLException e){
-            logger.error("update error" , e);
-        }finally {
-            DBPool.release(con, ps, null);
-        }
-        return false;
-
-    }
-
-
-
     public static boolean deleteDevice(String deviceId){
 
         Connection        con      = null;
@@ -151,6 +81,32 @@ public class DeviceInfo {
         }
         return false;
 
+    }
+
+
+    private static boolean selectSQL(String sql){
+        Connection        con      = null;
+        PreparedStatement ps        = null;
+        ResultSet         rs        = null;
+
+
+        try {
+            con = DBPool.getConnection();
+            con.setAutoCommit(false);
+
+            ps = con.prepareStatement(sql);
+            rs = ps.executeQuery();
+            con.commit();
+            if (rs.next()){
+                return true;
+            }
+
+        }catch (SQLException e){
+            logger.error("check device sql error" , e);
+        }finally {
+            DBPool.release(con,ps,rs);
+        }
+        return false;
     }
 
 }
